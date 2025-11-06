@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sweet Dreams</title>
+<link rel="stylesheet" href="syle.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="background-gradient"></div>
+<div class="clouds-container">
+  <div class="pixel-cloud cloud-1"></div>
+  <div class="pixel-cloud cloud-2"></div>
+  <div class="pixel-cloud cloud-3"></div>
+  <div class="pixel-cloud cloud-4"></div>
+  <div class="pixel-cloud cloud-5"></div>
+  <div class="pixel-cloud cloud-6"></div>
+  <div class="pixel-cloud cloud-7"></div>
+  <div class="pixel-cloud cloud-8"></div>
+  <div class="pixel-cloud cloud-9"></div>
+  <div class="pixel-cloud cloud-10"></div>
+</div>
+<header>
+  <div class="container">
+    <h1>Sleep Tracker</h1>
+    <p class="subtitle">Will I ever get enough sleep?</p>
+    <a href="page1.html">ZZZ...</a>
+  </div>
+</header>
+<main>
+  <div class="container">
+    <section class="chart-section">
+      <div class="card">
+        <div class="card-header">
+          <h2>Hours of Sleep</h2>
+          <p class="card-description">How many hours of sleep did you get last night?</p>
+          <p class="week-indicator" id="weekIndicator">Week 1 of 4</p>
+        </div>
+        <div class="chart-container">
+          <canvas id="myChart"></canvas>
+          <div id="sheepContainer" class="sheep-container"></div>
+        </div>
+        <div class="chart-controls">
+          <button class="btn" id="updateData">Next Week</button>
+          <button class="btn" id="resetData">Reset to Week 1</button>
+      </div>
+    </section>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <p>&copy; 2024 Go to Sleep.</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="script.js" defer></script>
+</body>
+</html>
